@@ -42,6 +42,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--c
 .btn:hover{background:var(--cuoio);border-color:var(--cuoio);transform:translateY(-2px)}
 .btn.ghost{background:transparent;color:var(--choc)}
 .btn.ghost:hover{background:var(--choc);color:var(--cream)}
+.btn.wa{background:#2f6b4f;border-color:#2f6b4f}.btn.wa:hover{background:#245640;border-color:#245640}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .cta.center{justify-content:center}
 

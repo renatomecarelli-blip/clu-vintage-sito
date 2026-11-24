@@ -6,7 +6,7 @@
 // ============================================================
 
 const INSTAGRAM = "clu_vintage";
-const WHATSAPP = ""; // numero con prefisso, es. "393331234567". Vuoto = niente WhatsApp.
+const WHATSAPP = "393393058680"; // numero con prefisso, es. "393331234567". Vuoto = niente WhatsApp.
 
 const CATS = {
   pellicce: { nome: "Pellicce", testo: "Visoni, gilet e mantelle scelti uno per uno: da provare davanti allo specchio." },

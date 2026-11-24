@@ -132,8 +132,13 @@ if ($("#product")) {
   });
   box.addEventListener("mouseleave", () => box.classList.remove("zoom"));
 
-  $("#p-ask").href = askHref(p);
-  if (WHATSAPP) $("#p-ask").textContent = "Chiedi info su WhatsApp";
+  $("#p-ask").href = `https://ig.me/m/${INSTAGRAM}`;
+  if (WHATSAPP) {
+    const wa = document.createElement("a");
+    wa.className = "btn wa"; wa.target = "_blank"; wa.rel = "noopener";
+    wa.href = askHref(p); wa.textContent = "Scrivici su WhatsApp";
+    $("#p-ask").after(wa);
+  }
   const copy = $("#p-copy");
   copy.onclick = async () => {
     try { await navigator.clipboard.writeText(`Ciao! Mi interessa: ${label(p)} (${location.href})`); copy.textContent = "Copiato: incollalo in DM"; }
